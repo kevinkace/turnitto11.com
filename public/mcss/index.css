@@ -1,0 +1,7 @@
+@import url("/lib/typebase.less");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}

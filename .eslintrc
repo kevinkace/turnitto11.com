@@ -19,7 +19,7 @@
 
         "comma-dangle": "warn",             // disallow trailing commas in object literals
         "no-cond-assign": "error",          // disallow assignment in conditional expressions
-        "no-console": "warn",               // disallow use of console (off by default in the node environment)
+        "no-console": "off",               // disallow use of console (off by default in the node environment)
         "no-constant-condition": "error",   // disallow use of constant expressions in conditions
         "no-control-regex": "off",          // disallow control characters in regular expressions
         "no-debugger": "warn",              // disallow use of debugger
