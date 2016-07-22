@@ -3,8 +3,8 @@
 const render = require("mithril-node-render"),
       sub    = require("string-template"),
 
-      post   = require("./post"),
-      layout = require("./layout");
+      post   = require("./pages/post"),
+      layout = require("./pages/layout");
 
 module.exports = (req, res, postO) => {
     let module = {

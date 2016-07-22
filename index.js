@@ -9,8 +9,8 @@ const express = require("express"),
       prepPost    = require("./app/prepPost"),
       respondPost = require("./app/respondPost"),
 
-      home   = require("./app/home"),
-      layout = require("./app/layout"),
+      home   = require("./app/pages/home"),
+      layout = require("./app/pages/layout"),
 
       removeExt = require("./app/util/removeExt");
 

@@ -1,7 +1,33 @@
-@import url("/lib/typebase.less");
+@import url("../lib/typebase.css");
+@import url("../lib/gridlex.css")
+
+
+/* match those in gridlex */
+@value xl: 80em;
+@value l: 64em;
+@value m: 48em;
+@value s: 35.5em;
+
+
 
 html,
 body {
     margin: 0;
     padding: 0;
+
+    font-family: Montserrat, "sans serif";
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+    @media screen and (min-width: m) {
+        padding: 0 2%;
+    }
+
+    @media screen and (min-width: l) {
+        padding: 0 20px;
+    }
 }
