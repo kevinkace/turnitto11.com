@@ -16,12 +16,12 @@ module.exports = (req, res, file) => {
         },
         nav = {};
 
-        if(res.state.posts.next) {
-            nav.next = `/posts/${removeExt(res.state.posts.next.filename)}`;
-        }
-
         if(res.state.posts.prev) {
             nav.prev = `/posts/${removeExt(res.state.posts.prev.filename)}`;
+        }
+
+        if(res.state.posts.next) {
+            nav.next = `/posts/${removeExt(res.state.posts.next.filename)}`;
         }
 
         postO.nav = nav;

@@ -10,7 +10,7 @@ const express = require("express"),
       respondPost = require("./app/respondPost"),
 
       home   = require("./app/pages/home"),
-      layout = require("./app/pages/layout"),
+      layout = require("./app/modules/layout"),
 
       removeExt = require("./app/util/removeExt");
 

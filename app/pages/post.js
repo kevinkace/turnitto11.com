@@ -2,11 +2,11 @@
 
 const m = require("mithril"),
 
-      header = require("../modules/header");;
+      header = require("../modules/header");
 
 module.exports = {
     view : (ctrl, state) => [
-        m("header"),
+        m(header),
         m("h2", state.title),
         m.trust(state.body),
         m("ul",

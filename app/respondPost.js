@@ -4,7 +4,7 @@ const render = require("mithril-node-render"),
       sub    = require("string-template"),
 
       post   = require("./pages/post"),
-      layout = require("../modules/layout");
+      layout = require("./modules/layout");
 
 module.exports = (req, res, postO) => {
     let module = {

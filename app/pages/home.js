@@ -6,7 +6,7 @@ const m = require("mithril"),
 
 module.exports = {
     view : (ctrl, options) => [
-        m("header1"),
+        m(header),
         m("a[href=/posts]", "CONTINUE")
     ]
 };
