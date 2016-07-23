@@ -1,10 +1,12 @@
 "use strict";
 
-const m = require("mithril");
+const m = require("mithril"),
+
+      header = require("../modules/header");
 
 module.exports = {
     view : (ctrl, options) => [
-        m("h1", "TURN IT TO 11"),
+        m("header1"),
         m("a[href=/posts]", "CONTINUE")
     ]
 };
