@@ -6,14 +6,20 @@ const m = require("mithril"),
 
 module.exports = {
     view : (ctrl, options) => [
-        m(header),
-        m("a[href=/posts]", "CONTINUE"),
+        m("div", { class : "grid" },
+            m("div", { class : "mc4e206468_cell" },
+                m(header),
+                m("a[href=/posts]", {
+                        class : "mc4e206468_continue"
+                    }, "CONTINUE")
+            )
+        ),
         m("video", {
                 autoplay : true,
                 loop     : true,
                 class    : "mc4e206468_videobg"
             },
-                m("source", { src : "/vid/turn11.mp4" })
-            )
+            m("source", { src : "/vid/turn11.mp4" })
+        )
     ]
 };

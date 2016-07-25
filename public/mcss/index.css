@@ -8,7 +8,15 @@
 @value m: 48em;
 @value s: 35.5em;
 
+html {
+    box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 
 html,
 body {
@@ -21,20 +29,32 @@ body {
 
 body {
     position: relative;
+    color: #dacfcf;
+    background: #1b1917;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 4%;
+a {
+    color: #a90404;
+}
 
-    @media screen and (min-width: m) {
-        padding: 0 2%;
-    }
+:global(#mount) {
+    min-height: 100%;
+}
 
-    @media screen and (min-width: l) {
-        padding: 0 20px;
-    }
+.logo {
+    fill: #dacfcf;
+}
+
+/* @import url("home.css"); */
+.cell {
+    text-align: center;
+}
+
+.continue {
+    display: block;
+    margin-top: -3em;
+
+    text-decoration: none;
 }
 
 .videobg {
@@ -48,3 +68,19 @@ body {
     z-index: -100;
     transform: translate(-50%, -50%);
 }
+
+/* @import url("post.css"); */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4%;
+
+    @media screen and (min-width: m) {
+        padding: 2% 2%;
+    }
+
+    @media screen and (min-width: l) {
+        padding: 20px;
+    }
+}
+
