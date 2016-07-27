@@ -1,13 +1,15 @@
 "use strict";
 
-const m = require("mithril");
+const m = require("mithril"),
+
+    css = require("./header.css");
 
 module.exports = {
-    view : () =>
-        m("h1",
-            m("a[href=/]",
+    view : (ctrl, opts) =>
+        m("h1", { class : css.h1 },
+            m("a", { href : (opts && opts.link) || "/" },
                 m("svg", {
-                        class   : "mc4e206468_logo",
+                        class   : css.logo,
                         viewbox : [ 0, 0, 405.5, 112.76 ].join(" ")
                     },
                     m("title", "TURN IT TO 11"),

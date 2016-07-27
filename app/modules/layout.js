@@ -12,13 +12,13 @@ module.exports = `<!doctype html>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/lib/typebase.css">
+        <link rel="stylesheet" href="/lib/gridlex.css">
+        <link rel="stylesheet" href="/gen/index.css">
     </head>
 
-    <body>
-        <div id="mount" class="mc4e206468_container">
-            {content}
-        </div>
+    <body id="mount">
+        {content}
     </body>
 
 </html>`;

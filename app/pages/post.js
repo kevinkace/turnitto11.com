@@ -2,17 +2,35 @@
 
 const m = require("mithril"),
 
-      header = require("../modules/header");
+      header = require("../modules/header"),
+
+      css = require("./post.css");
 
 module.exports = {
+    controller : (state) => {
+        state = state || {};
+
+        if(!state.posts || state.posts[m.route.param("id")]) {
+            state = {
+                title : "fake title",
+                body  : "fake body",
+                nav   : []
+            };
+        }
+    },
     view : (ctrl, state) => [
         m(header),
-        m("h2", state.title),
-        m.trust(state.body),
-        m("ul",
-            Object.keys(state.nav).map((link) =>
-                m("li",
-                    m(`a[href=${state.nav[link]}]`, link)
+        m("div", { class : css.container },
+            m("h2", { class : css.title }, state.title),
+            m.trust(state.body),
+            m("ul", { class : css.nav },
+                Object.keys(state.nav).map((link, idx) =>
+                    m("li", { class : css[`navItem${idx}`] },
+                        m("a", {
+                            href  : state.nav[link],
+                            class : css.navLink
+                        }, link)
+                    )
                 )
             )
         )

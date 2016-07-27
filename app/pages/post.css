@@ -1,0 +1,46 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+    @media screen and (min-width: m) {
+        padding: 0 2%;
+    }
+
+    @media screen and (min-width: l) {
+        padding: 0 20px;
+    }
+}
+
+.title {
+    margin: 0;
+}
+
+.nav {
+    composes: global(grid);
+
+    list-style: none;
+    margin: 4em 0;
+    padding: 0;
+}
+
+.navItem0 {
+    composes: global(col);
+
+    margin: 0;
+    padding: 0;
+}
+
+.navItem1 {
+    composes: navItem0;
+
+    text-align: right;
+}
+
+.navLink {
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

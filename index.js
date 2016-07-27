@@ -1,5 +1,7 @@
 "use strict";
 
+require("./app/util/loader-css")();
+
 const express = require("express"),
       app     = express(),
       render  = require("mithril-node-render"),
@@ -12,7 +14,9 @@ const express = require("express"),
       home   = require("./app/pages/home"),
       layout = require("./app/modules/layout"),
 
-      removeExt = require("./app/util/removeExt");
+      removeExt = require("./app/util/removeExt"),
+
+      css = require("./app/index.css"); // eslint-disable-line no-unused-vars
 
 let posts;
 

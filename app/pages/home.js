@@ -2,22 +2,24 @@
 
 const m = require("mithril"),
 
-      header = require("../modules/header");
+      header = require("../modules/header"),
+
+      css = require("./home.css");
 
 module.exports = {
     view : (ctrl, options) => [
-        m("div", { class : "grid" },
-            m("div", { class : "mc4e206468_cell" },
-                m(header),
+        m("div", { class : css.grid },
+            m("div", { class : css.cell },
+                m(header, { link : "/posts" }),
                 m("a[href=/posts]", {
-                        class : "mc4e206468_continue"
+                        class : css.continue
                     }, "CONTINUE")
             )
         ),
         m("video", {
                 autoplay : true,
                 loop     : true,
-                class    : "mc4e206468_videobg"
+                class    : css.video
             },
             m("source", { src : "/vid/turn11.mp4" })
         )
