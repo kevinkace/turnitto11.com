@@ -23,6 +23,14 @@ body {
     font-family: Montserrat, "sans serif";
 }
 
+html {
+    font-size: 100%;
+
+    @media screen and (min-width: l) {
+        font-size: 137.5%;
+    }
+}
+
 body {
     position: relative;
     color: #dacfcf;
@@ -33,6 +41,10 @@ a {
     color: #a90404;
 }
 
-:global(#mount) {
-    min-height: 100%;
+h2 {
+    font-size: 2rem;
+
+    @media screen and (min-width: l) {
+        font-size: 2.828rem;
+    }
 }

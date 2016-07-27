@@ -1,7 +1,5 @@
 {
-    "app/index.css": {
-        "mount": "mount"
-    },
+    "app/index.css": {},
     "app/modules/header.css": {
         "logo": "mc6a5cb6b0_logo",
         "h1": "mc6a5cb6b0_h1"

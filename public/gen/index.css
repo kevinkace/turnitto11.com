@@ -15,6 +15,14 @@ body {
     padding: 0;
     font-family: Montserrat, "sans serif"
 }
+html {
+    font-size: 100%
+}
+@media screen and (min-width: 64em) {
+    html {
+        font-size: 137.5%
+    }
+}
 body {
     position: relative;
     color: #dacfcf;
@@ -23,8 +31,13 @@ body {
 a {
     color: #a90404
 }
-#mount {
-    min-height: 100%
+h2 {
+    font-size: 2rem
+}
+@media screen and (min-width: 64em) {
+    h2 {
+        font-size: 2.828rem
+    }
 }
 /* app/modules/header.css */
 .mc6a5cb6b0_logo {
@@ -32,31 +45,6 @@ a {
 }
 .mc6a5cb6b0_h1 {
     margin: 0
-}
-/* app/pages/home.css */
-.mc7e603aff_grid {
-    height: 100%;
-    margin: 0
-}
-.mc7e603aff_cell {
-    padding: 0;
-    text-align: center
-}
-.mc7e603aff_continue {
-    display: block;
-    margin-top: -3em;
-    text-decoration: none
-}
-.mc7e603aff_video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translate(-50%, -50%)
 }
 /* app/pages/post.css */
 .mccbf490de_container {
@@ -95,4 +83,34 @@ a {
 }
 .mccbf490de_navLink:hover {
     text-decoration: underline
+}
+/* app/pages/home.css */
+.mc7e603aff_grid {
+    height: 100%;
+    margin: 0
+}
+.mc7e603aff_cell {
+    padding: 0;
+    text-align: center
+}
+.mc7e603aff_continue {
+    display: block;
+    margin-top: -10%;
+    text-decoration: none
+}
+@media screen and (min-width: lg) {
+    .mc7e603aff_continue {
+        margin-top: -3em
+    }
+}
+.mc7e603aff_video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%)
 }

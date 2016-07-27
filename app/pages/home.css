@@ -1,3 +1,5 @@
+@value l from "../index.css";
+
 .grid {
     composes: global(grid-middle);
 
@@ -15,9 +17,13 @@
 
 .continue {
     display: block;
-    margin-top: -3em;
+    margin-top: -10%;
 
     text-decoration: none;
+
+    @media screen and (min-width: lg) {
+        margin-top: -3em;
+    }
 }
 
 .video {
