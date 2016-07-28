@@ -8,6 +8,8 @@ const express = require("express"),
       sub     = require("string-template"),
       fs      = require("fs-promise"),
 
+      config = require("./config.json"),
+
       prepPost    = require("./app/prepPost"),
       respondPost = require("./app/respondPost"),
 
@@ -128,4 +130,4 @@ app.get("/posts/:date", (req, res) => {
         });
 });
 
-app.listen("420");
+app.listen(config.port);
