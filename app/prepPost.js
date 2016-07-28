@@ -1,7 +1,7 @@
 "use strict";
 
 const MarkdownIt = require("markdown-it"),
-      md         = new MarkdownIt(),
+      md         = new MarkdownIt({ html : true }),
 
       removeExt = require("./util/removeExt");
 

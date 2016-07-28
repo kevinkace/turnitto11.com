@@ -21,7 +21,7 @@ module.exports = {
     view : (ctrl, state) => [
         m(header),
         m("div", { class : css.container },
-            m("h2", { class : css.title }, state.title),
+            m("h1", { class : css.title }, state.title),
             m.trust(state.body),
             m("ul", { class : css.nav },
                 Object.keys(state.nav).map((link, idx) =>
