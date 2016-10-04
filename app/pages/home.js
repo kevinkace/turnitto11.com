@@ -7,7 +7,7 @@ const m = require("mithril"),
       css = require("./home.css");
 
 module.exports = {
-    view : (ctrl, options) => [
+    view : () => [
         m("div", { class : css.grid },
             m("div", { class : css.cell },
                 m(header, { link : "/posts" }),

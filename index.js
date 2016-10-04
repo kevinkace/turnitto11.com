@@ -10,6 +10,8 @@ const express = require("express"),
       css = require("./app/index.css"); // eslint-disable-line no-unused-vars
 
 app.use(express.static("public"));
+app.use("/cms", express.static("cms"));
+app.use("/cms/gen", express.static("node_modules/crucible/gen"));
 
 app.get("/", require("./app/controllers/home"));
 
