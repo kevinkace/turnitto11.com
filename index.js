@@ -12,6 +12,7 @@ const express = require("express"),
 app.use(express.static("public"));
 app.use("/cms", express.static("cms"));
 app.use("/cms/gen", express.static("node_modules/crucible/gen"));
+app.use("/cms/*?", express.static("cms"));
 
 app.get("/", require("./app/controllers/home"));
 
