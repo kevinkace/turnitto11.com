@@ -6,8 +6,10 @@
   "dependencies": {
     "crucible": "^0.3.1",
     "express": "^4.14.0",
+    "firebase": "^3.4.1",
     "fs-promise": "^0.5.0",
     "markdown-it": "^7.0.0",
+    "memory-cache": "^0.1.6",
     "mithril": "^0.2.5",
     "mithril-node-render": "^0.5.0",
     "modular-css": "^0.23.2",

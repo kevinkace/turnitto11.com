@@ -1,6 +1,18 @@
 "use strict";
 
+// const db = require("../util/firebase");
+const config = require("../../config.json"),
+    fb       = require("firebase").initializeApp(config.firebase),
+
+    db = fb.database();
+
 module.exports = function(req, res) {
+    db.ref("t11/content/post")
+        .once("value")
+        .then((snapshot) => {
+            console.log(snapshot.val());
+            res.send("snappy");
+        });
     // res.state = {
     //     posts : {
     //         all : posts,
@@ -13,7 +25,6 @@ module.exports = function(req, res) {
     //     }
     // };
 
-    res.send("oh shit");
 
     // fs.readFile(`./app/posts/${res.state.posts.cur.filename}`, { encoding : "utf8" })
     //     .then(prepPost.bind(null, req, res))
