@@ -1,8 +1,6 @@
-// "use strict";
+"use strict";
 
-// const fb   = require("firebase"),
-//     config = require("../../config.json"),
+const config = require("../../config.json"),
+    fb       = require("firebase").initializeApp(config.firebase);
 
-//     db = fb.initializeApp(config.firebase).database();
-
-// module.exports = db;
+module.exports = fb;

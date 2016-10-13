@@ -1,17 +1,13 @@
 "use strict";
 
-// const db = require("../util/firebase");
-const config = require("../../config.json"),
-    fb       = require("firebase").initializeApp(config.firebase),
-
-    db = fb.database();
+const db = require("../util/firebase").database();
 
 module.exports = function(req, res) {
     db.ref("t11/content/post")
+        .limitToLast(1)
         .once("value")
         .then((snapshot) => {
-            console.log(snapshot.val());
-            res.send("snappy");
+            res.send(snapshot.val());
         });
     // res.state = {
     //     posts : {
