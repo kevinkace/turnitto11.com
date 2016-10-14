@@ -18,6 +18,6 @@ app.get("/", require("./app/controllers/home"));
 
 app.get("/posts", require("./app/controllers/posts"));
 
-app.get("/posts/:date", require("./app/controllers/post"));
+app.get("/posts/:slug", require("./app/controllers/post"));
 
 app.listen(config.port);

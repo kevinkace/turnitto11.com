@@ -1,32 +1,24 @@
 "use strict";
 
-const db = require("../util/firebase").database();
+const db   = require("../util/firebase").database(),
+    respond = require("./respondPost");
 
 module.exports = function(req, res) {
     db.ref("t11/content/post")
-        .limitToLast(1)
+        .limitToLast(2)
         .once("value")
         .then((snapshot) => {
-            res.send(snapshot.val());
-        });
-    // res.state = {
-    //     posts : {
-    //         all : posts,
-    //         cur : {
-    //             filename : posts[0]
-    //         },
-    //         prev : {
-    //             filename : posts[1]
-    //         }
-    //     }
-    // };
+            let val      = snapshot.val(),
+                postIds  = Object.keys(val)
+                    // todo: this sort is wrong
+                    .sort((id1, id2) => val[id1].published_at > val[id2].published_at ? -1 : 1),
+                postsData = {
+                    curr : val[postIds[0]],
+                    prev : val[postIds[1]]
+                };
 
-
-    // fs.readFile(`./app/posts/${res.state.posts.cur.filename}`, { encoding : "utf8" })
-    //     .then(prepPost.bind(null, req, res))
-    //     .then(respondPost.bind(null, req, res))
-    //     .catch((reason) => {
-    //         res.status(500).send(`Done goofed ${reason}`);
-    //         console.log("Error prepping post");
-    //     });
+            return postsData;
+        })
+        .then(respond.bind(null, req, res))
+        .catch((e) => console.log(`Post failed: ${e}`));
 };

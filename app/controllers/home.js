@@ -1,7 +1,7 @@
 "use strict";
 
-const home   = require("../pages/home"),
-      layout = require("../modules/layout"),
+const home   = require("../views/home"),
+      layout = require("../views/layout"),
 
       render  = require("mithril-node-render"),
       sub     = require("string-template");

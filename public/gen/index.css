@@ -68,71 +68,71 @@ pre {
     max-width: 100%;
     overflow: auto
 }
-/* app/modules/header.css */
-.mc6a5cb6b0_logo {
+/* app/views/header.css */
+.mc065a93f6_logo {
     fill: #dacfcf
 }
-.mc6a5cb6b0_h1 {
+.mc065a93f6_h1 {
     margin: 0
 }
-/* app/pages/post.css */
-.mccbf490de_container {
+/* app/views/posts.css */
+.mc3ae57894_container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%
 }
 @media screen and (min-width: m) {
-    .mccbf490de_container {
+    .mc3ae57894_container {
         padding: 0 2%
     }
 }
 @media screen and (min-width: l) {
-    .mccbf490de_container {
+    .mc3ae57894_container {
         padding: 0 20px
     }
 }
-.mccbf490de_title {
+.mc3ae57894_title {
     margin: 0
 }
-.mccbf490de_nav {
+.mc3ae57894_nav {
     list-style: none;
     margin: 4em 0;
     padding: 0
 }
-.mccbf490de_navItem0 {
+.mc3ae57894_navItem0 {
     margin: 0;
     padding: 0
 }
-.mccbf490de_navItem1 {
+.mc3ae57894_navItem1 {
     text-align: right
 }
-.mccbf490de_navLink {
+.mc3ae57894_navLink {
     text-transform: uppercase;
     text-decoration: none
 }
-.mccbf490de_navLink:hover {
+.mc3ae57894_navLink:hover {
     text-decoration: underline
 }
-/* app/pages/home.css */
-.mc7e603aff_grid {
+/* app/views/home.css */
+.mc99f64c19_grid {
     height: 100%;
     margin: 0
 }
-.mc7e603aff_cell {
+.mc99f64c19_cell {
     padding: 0;
     text-align: center
 }
-.mc7e603aff_continue {
+.mc99f64c19_continue {
     display: block;
     margin-top: -10%;
     text-decoration: none
 }
 @media screen and (min-width: lg) {
-    .mc7e603aff_continue {
+    .mc99f64c19_continue {
         margin-top: -3em
     }
 }
-.mc7e603aff_video {
+.mc99f64c19_video {
     position: fixed;
     top: 50%;
     left: 50%;

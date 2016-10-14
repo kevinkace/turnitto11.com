@@ -1,21 +1,21 @@
 {
     "app/index.css": {},
-    "app/modules/header.css": {
-        "logo": "mc6a5cb6b0_logo",
-        "h1": "mc6a5cb6b0_h1"
+    "app/views/header.css": {
+        "logo": "mc065a93f6_logo",
+        "h1": "mc065a93f6_h1"
     },
-    "app/pages/home.css": {
-        "grid": "grid-middle mc7e603aff_grid",
-        "cell": "col mc7e603aff_cell",
-        "continue": "mc7e603aff_continue",
-        "video": "mc7e603aff_video"
+    "app/views/home.css": {
+        "grid": "grid-middle mc99f64c19_grid",
+        "cell": "col mc99f64c19_cell",
+        "continue": "mc99f64c19_continue",
+        "video": "mc99f64c19_video"
     },
-    "app/pages/post.css": {
-        "container": "mccbf490de_container",
-        "title": "mccbf490de_title",
-        "nav": "grid mccbf490de_nav",
-        "navItem0": "col mccbf490de_navItem0",
-        "navItem1": "col mccbf490de_navItem0 mccbf490de_navItem1",
-        "navLink": "mccbf490de_navLink"
+    "app/views/posts.css": {
+        "container": "mc3ae57894_container",
+        "title": "mc3ae57894_title",
+        "nav": "grid mc3ae57894_nav",
+        "navItem0": "col mc3ae57894_navItem0",
+        "navItem1": "col mc3ae57894_navItem0 mc3ae57894_navItem1",
+        "navLink": "mc3ae57894_navLink"
     }
 }
