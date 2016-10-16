@@ -70,10 +70,15 @@ pre {
 }
 /* app/views/header.css */
 .mc065a93f6_logo {
+    display: block;
     fill: #dacfcf
 }
 .mc065a93f6_h1 {
-    margin: 0
+    max-width: 1200px;
+    margin: 0 auto
+}
+.mc065a93f6_home {
+    max-width: 100%
 }
 /* app/views/posts.css */
 .mc3ae57894_container {
@@ -124,13 +129,9 @@ pre {
 }
 .mc99f64c19_continue {
     display: block;
-    margin-top: -10%;
+    margin-top: -2.2em;
+    font-size: 3.6vw;
     text-decoration: none
-}
-@media screen and (min-width: lg) {
-    .mc99f64c19_continue {
-        margin-top: -3em
-    }
 }
 .mc99f64c19_video {
     position: fixed;

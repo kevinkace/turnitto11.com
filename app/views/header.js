@@ -5,7 +5,7 @@ const m = require("mithril"),
     css = require("./header.css");
 
 module.exports = {
-    view : (ctrl, opts) => m("h1", { class : css.h1 },
+    view : (ctrl, opts) => m("h1", { class : css[ opts && opts.page || "h1" ] },
         m("a", { href : (opts && opts.link) || "/" },
             m("svg", {
                     class   : css.logo,

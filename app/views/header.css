@@ -1,7 +1,15 @@
 .logo {
+    display: block;
     fill: #dacfcf;
 }
 
 .h1 {
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home {
+    composes: h1;
+
+    max-width: 100%;
 }

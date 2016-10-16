@@ -2,7 +2,8 @@
     "app/index.css": {},
     "app/views/header.css": {
         "logo": "mc065a93f6_logo",
-        "h1": "mc065a93f6_h1"
+        "h1": "mc065a93f6_h1",
+        "home": "mc065a93f6_h1 mc065a93f6_home"
     },
     "app/views/home.css": {
         "grid": "grid-middle mc99f64c19_grid",

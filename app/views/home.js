@@ -7,10 +7,10 @@ const m = require("mithril"),
       css = require("./home.css");
 
 module.exports = {
-    view : (ctrl, options) => [
+    view : (ctrl, opts) => [
         m("div", { class : css.grid },
             m("div", { class : css.cell },
-                m(header, { link : "/posts" }),
+                m(header, { link : "/posts", page : "home" }),
                 m("a[href=/posts]", {
                         class : css.continue
                     }, "CONTINUE")
