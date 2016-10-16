@@ -6,17 +6,24 @@ const m    = require("mithril"),
 
     cmpts = {
         posts  : require("../views/posts"),
-        layout : require("../views/layout")
+        layout : require("../views/layout"),
+        404    : require("../views/404")
     };
 
 module.exports = (req, res, postsData) => {
-    let component = {
-            view : cmpts.posts.view.bind(m,
+    let component = {},
+        rendered;
+
+        if(Object.keys(postsData).length) {
+            component.view = cmpts.posts.view.bind(m,
                 cmpts.posts.controller || {},
                 postsData
-            )
-        },
-        rendered = sub(cmpts.layout, { content : render(component) });
+            );
+        } else {
+            component.view = cmpts[404].view;
+        }
+
+         rendered = sub(cmpts.layout, { content : render(component) });
 
     res.send(rendered);
 

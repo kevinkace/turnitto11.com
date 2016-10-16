@@ -20,4 +20,6 @@ app.get("/posts", require("./app/controllers/posts"));
 
 app.get("/posts/:slug", require("./app/controllers/post"));
 
+app.get("*", require("./app/controllers/post"));
+
 app.listen(config.port);
