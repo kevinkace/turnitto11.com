@@ -15,8 +15,9 @@
         "container": "mc3ae57894_container",
         "title": "mc3ae57894_title",
         "nav": "grid mc3ae57894_nav",
-        "navItem0": "col mc3ae57894_navItem0",
-        "navItem1": "col mc3ae57894_navItem0 mc3ae57894_navItem1",
+        "navItem": "col mc3ae57894_navItem",
+        "navItem0": "col mc3ae57894_navItem mc3ae57894_navItem0",
+        "navItem1": "col mc3ae57894_navItem mc3ae57894_navItem1",
         "navLink": "mc3ae57894_navLink"
     }
 }

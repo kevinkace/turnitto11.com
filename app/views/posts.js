@@ -7,13 +7,13 @@ const m = require("mithril"),
       css = require("./posts.css");
 
 module.exports = {
-    view : (ctrl, state) =>  [
+    view : (ctrl, state) => [
         m(header),
         m("div", { class : css.container },
             m("h1", { class : css.title }, state.curr.fields.title),
             m.trust(state.curr.fields.body),
             m("ul", { class : css.nav },
-                [state.prev, state.next]
+                [ state.prev, state.next ]
                     .filter((link) => Boolean(link))
                     .map((link, idx) =>
                         m("li", { class : css[`navItem${idx}`] },

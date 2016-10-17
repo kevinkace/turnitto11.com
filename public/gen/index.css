@@ -104,12 +104,19 @@ pre {
     margin: 4em 0;
     padding: 0
 }
-.mc3ae57894_navItem0 {
+.mc3ae57894_navItem {
+    position: relative;
     margin: 0;
     padding: 0
 }
+.mc3ae57894_navItem0:before {
+    content: "↤"
+}
 .mc3ae57894_navItem1 {
     text-align: right
+}
+.mc3ae57894_navItem1:after {
+    content: "↦"
 }
 .mc3ae57894_navLink {
     text-transform: uppercase;
