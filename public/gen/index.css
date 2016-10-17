@@ -109,14 +109,28 @@ pre {
     margin: 0;
     padding: 0
 }
+.mc3ae57894_navItem:before,
+    .mc3ae57894_navItem:after {
+    position: absolute;
+    display: none;
+    font-size: 1.25em
+}
+.mc3ae57894_navItem:hover:before,
+        .mc3ae57894_navItem:hover:after {
+    display: block
+}
 .mc3ae57894_navItem0:before {
-    content: "↤"
+    content: "↤";
+    right: 100%;
+    margin-right: 1em
 }
 .mc3ae57894_navItem1 {
     text-align: right
 }
 .mc3ae57894_navItem1:after {
-    content: "↦"
+    content: "↦";
+    left: 100%;
+    margin-left: 1em
 }
 .mc3ae57894_navLink {
     text-transform: uppercase;
