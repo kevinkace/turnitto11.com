@@ -39,7 +39,7 @@ h5,
 h6,
 ul,
 ol {
-    margin: 2rem 0 0
+    margin: 1rem 0 0
 }
 p {
     margin: 1em 0 0
@@ -53,11 +53,11 @@ h1 {
     }
 }
 h2 {
-    font-size: 2rem
+    font-size: 1.5rem
 }
 @media screen and (min-width: 64em) {
     h2 {
-        font-size: 2.28rem
+        font-size: 1.8rem
     }
 }
 abbr {
@@ -97,12 +97,14 @@ pre {
     }
 }
 .mc3ae57894_title {
-    margin: 0
+    margin: 0 0 2rem;
+    border-bottom: solid 0.1em
 }
 .mc3ae57894_nav {
     list-style: none;
     margin: 4em 0;
-    padding: 0
+    padding: 0;
+    border-top: solid
 }
 .mc3ae57894_navItem {
     position: relative;

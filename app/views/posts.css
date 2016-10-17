@@ -13,7 +13,9 @@
 }
 
 .title {
-    margin: 0;
+    margin: 0 0 2rem;
+
+    border-bottom: solid 0.1em;
 }
 
 .nav {
@@ -22,6 +24,8 @@
     list-style: none;
     margin: 4em 0;
     padding: 0;
+
+    border-top: solid;
 }
 
 .navItem {
