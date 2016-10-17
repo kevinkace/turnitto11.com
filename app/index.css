@@ -49,7 +49,7 @@ h5,
 h6,
 ul,
 ol {
-    margin: 2rem 0 0;
+    margin: 1rem 0 0;
 }
 
 p {
@@ -65,10 +65,10 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     @media screen and (min-width: l) {
-        font-size: 2.28rem;
+        font-size: 1.8rem;
     }
 }
 
